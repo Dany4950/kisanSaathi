@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:kisan_saathi/screens/auth/Login.dart';
+import 'package:kisan_saathi/screens/auth/Otp.dart';
 
 class CustomelevatedLoginbutton extends StatelessWidget {
   const CustomelevatedLoginbutton({super.key});
 
   @override
   Widget build(BuildContext context) {
+
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
     return TextButton(
       onPressed: () {
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => loginScreen()));
+            context, MaterialPageRoute(builder: (context) => OtpScreen()));
       },
       child: Container(
           decoration: BoxDecoration(

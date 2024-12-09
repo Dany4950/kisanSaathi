@@ -1,11 +1,11 @@
-import 'dart:io';
+
 
 import 'package:flutter/material.dart';
 import 'package:kisan_saathi/providerModels/login/mobileTextProvider.dart';
 import 'package:kisan_saathi/themes/appTheme.dart';
 import 'package:kisan_saathi/utils/loginElevatedButton.dart';
 import 'package:provider/provider.dart';
-import 'package:url_launcher/url_launcher.dart';
+
 
 class loginScreen extends StatelessWidget {
   const loginScreen({super.key});
@@ -22,8 +22,24 @@ class loginScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             SizedBox(
-              height: screenHeight * 0.09,
+            height: screenHeight * 0.1,
+          ),
+
+          //logo container
+
+          Center(
+            child: Container(
+              height: screenHeight * 0.25,
+              child: Image.asset('assets/images/appLogo.png'),
             ),
+          ),
+
+          // space between app logo and app text
+          SizedBox(
+            height: screenHeight * 0.08,
+          ),
+
+          
             Center(
               child: Text(
                 "KISAN SAATHI",
@@ -41,7 +57,7 @@ class loginScreen extends StatelessWidget {
               width: screenWidth * 0.8,
               child: TextFormField(
                 maxLength: 10,
-                style: TextStyle(
+                style: const TextStyle(
                     fontSize: 18,
                     color: Colors.black,
                     fontWeight: FontWeight.normal),
