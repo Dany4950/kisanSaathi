@@ -2,8 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:kisan_saathi/providerModels/login/mobileTextProvider.dart';
+
+import 'package:kisan_saathi/screens/user/mainScreen.dart';
 import 'package:kisan_saathi/themes/appTheme.dart';
-import 'package:kisan_saathi/utils/loginElevatedButton.dart';
+
 import 'package:provider/provider.dart';
 
 
@@ -70,11 +72,26 @@ class loginScreen extends StatelessWidget {
                 controller: MobileProvider.MobileTextController,
                 decoration: const InputDecoration(),
               ),
-            )
+            ),
 
             // login/register button
-            ,
-            const CustomelevatedLoginbutton(),
+            
+           TextButton(
+      onPressed: () {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => MainScreen()));
+      },
+      child: Container(
+          decoration: BoxDecoration(
+              color: Colors.grey[600], borderRadius: BorderRadius.circular(9)),
+          height: screenHeight * 0.07,
+          width: screenWidth * 0.7,
+          child: const Center(
+              child: Text(
+            "Login/Register",
+            style: TextStyle(fontSize: 16, color: Colors.white),
+          ))),
+    ),
 
             // space between button and Not now link
             SizedBox(

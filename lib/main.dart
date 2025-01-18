@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kisan_saathi/providerModels/login/mobileTextProvider.dart';
 import 'package:kisan_saathi/providerModels/login/otpTextProvider.dart';
+import 'package:kisan_saathi/providerModels/navigationProvider.dart';
 
 import 'package:kisan_saathi/screens/splashScreen.dart';
 import 'package:kisan_saathi/themes/appTheme.dart';
@@ -17,6 +18,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
+
+        ChangeNotifierProvider<NavigationProvider>(
+          create: (context) => NavigationProvider(),
+        ),
         ChangeNotifierProvider<Mobiletextprovider>(
           create: (context) => Mobiletextprovider(),
         ),
