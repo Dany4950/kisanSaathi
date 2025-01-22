@@ -16,6 +16,7 @@ class Apptheme {
         
         //subtext in landing page theme
         bodyMedium: TextStyle(fontSize: 16, color: Colors.black),
+        
       ),
     );
   }
