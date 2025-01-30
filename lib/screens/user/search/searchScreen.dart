@@ -32,6 +32,7 @@ class Searchscreen extends StatelessWidget {
                 suffix: IconButton(
                     onPressed: () {
                       //logic for the voice button
+                      
                     },
                     icon: Icon(Icons.mic)),
                 hintText: 'Search',

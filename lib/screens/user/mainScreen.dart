@@ -6,9 +6,7 @@ import 'package:kisan_saathi/screens/user/notification/notificationScreen.dart';
 import 'package:kisan_saathi/screens/user/profile/profileScreen.dart';
 import 'package:kisan_saathi/screens/user/search/searchScreen.dart';
 
-
-// this screen pops up after login , handles navigation of pages on index based stack 
-
+// this screen pops up after login , handles navigation of pages on index based stack
 
 class MainScreen extends StatelessWidget {
   MainScreen({Key? key}) : super(key: key);
@@ -17,12 +15,12 @@ class MainScreen extends StatelessWidget {
     NavigationItem(
       label: '',
       icon: Icons.home,
-      screen: const Homescreen(),
+      screen: Homescreen(),
     ),
     NavigationItem(
       label: '',
       icon: Icons.search,
-      screen: const Searchscreen(),
+      screen: Searchscreen(),
     ),
     NavigationItem(
         label: '',

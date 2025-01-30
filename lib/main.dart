@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kisan_saathi/providerModels/login/mobileTextProvider.dart';
 import 'package:kisan_saathi/providerModels/login/otpTextProvider.dart';
 import 'package:kisan_saathi/providerModels/navigationProvider.dart';
-
+import 'package:kisan_saathi/providerModels/prodcut/productTile.dart';
 import 'package:kisan_saathi/screens/splashScreen.dart';
 import 'package:kisan_saathi/themes/appTheme.dart';
 import 'package:provider/provider.dart';
@@ -18,14 +18,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-
+        ChangeNotifierProvider<ProductProvider>(
+          create: (context) => ProductProvider(),
+        ),
         ChangeNotifierProvider<NavigationProvider>(
           create: (context) => NavigationProvider(),
         ),
         ChangeNotifierProvider<Mobiletextprovider>(
           create: (context) => Mobiletextprovider(),
         ),
-
         ChangeNotifierProvider<Otptextprovider>(
           create: (context) => Otptextprovider(),
         ),
