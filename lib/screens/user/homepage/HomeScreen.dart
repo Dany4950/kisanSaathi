@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kisan_saathi/providerModels/prodcut/productTile.dart';
+import 'package:kisan_saathi/providerModels/prodcut/productTileProvider.dart';
 import 'package:kisan_saathi/screens/user/product/enlargeProductScreen.dart';
 
 import 'package:kisan_saathi/utils/widgets/productTile.dart';
