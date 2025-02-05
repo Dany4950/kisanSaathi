@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:kisan_saathi/providerModels/login/mobileTextProvider.dart';
 
-import 'package:kisan_saathi/screens/user/mainScreen.dart';
+import 'package:kisan_saathi/screens/user/landingScreen.dart';
 import 'package:kisan_saathi/themes/appTheme.dart';
 
 import 'package:provider/provider.dart';
@@ -79,7 +79,7 @@ class loginScreen extends StatelessWidget {
            TextButton(
       onPressed: () {
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => MainScreen()));
+            context, MaterialPageRoute(builder: (context) => landingScreen()));
       },
       child: Container(
           decoration: BoxDecoration(

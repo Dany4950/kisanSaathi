@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 
 class AddtocartProvider extends ChangeNotifier {
-  int _numberOfItems = 0; 
+  int _numberOfItems = 1; 
 
 
   int get numberOfItems => _numberOfItems;

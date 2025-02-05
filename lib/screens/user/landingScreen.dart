@@ -8,8 +8,8 @@ import 'package:kisan_saathi/screens/user/search/searchScreen.dart';
 
 // this screen pops up after login , handles navigation of pages on index based stack
 
-class MainScreen extends StatelessWidget {
-  MainScreen({Key? key}) : super(key: key);
+class landingScreen extends StatelessWidget {
+  landingScreen({Key? key}) : super(key: key);
 
   final List<NavigationItem> _navigationItems = [
     NavigationItem(
@@ -20,7 +20,7 @@ class MainScreen extends StatelessWidget {
     NavigationItem(
       label: '',
       icon: Icons.search,
-      screen: Searchscreen(),
+      screen: SearchScreen(),
     ),
     NavigationItem(
         label: '',

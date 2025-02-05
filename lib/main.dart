@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:kisan_saathi/providerModels/addToCartProvider.dart';
 import 'package:kisan_saathi/providerModels/cartProvider.dart';
+import 'package:kisan_saathi/providerModels/checkout/checkoutProvider.dart';
+import 'package:kisan_saathi/providerModels/checkout/paymentProvider.dart';
 import 'package:kisan_saathi/providerModels/login/mobileTextProvider.dart';
 import 'package:kisan_saathi/providerModels/login/otpTextProvider.dart';
 import 'package:kisan_saathi/providerModels/navigationProvider.dart';
@@ -20,10 +22,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
+        ChangeNotifierProvider<PaymentProvider>(
+            create: (_) => PaymentProvider()),
+        ChangeNotifierProvider<Checkoutprovider>(
+          create: (context) => Checkoutprovider(),
+        ),
         ChangeNotifierProvider<AddtocartProvider>(
           create: (context) => AddtocartProvider(),
         ),
-         ChangeNotifierProvider<CartProvider>(
+        ChangeNotifierProvider<CartProvider>(
           create: (context) => CartProvider(),
         ),
         ChangeNotifierProvider<ProductProvider>(
