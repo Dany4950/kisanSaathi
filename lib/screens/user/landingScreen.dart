@@ -38,3 +38,4 @@ class landingScreen extends StatelessWidget {
     return AppNavigator(items: _navigationItems);
   }
 }
+

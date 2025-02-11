@@ -85,7 +85,7 @@ class cartScreen extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                       builder: (context) =>
-                          Checkoutscreen()), // Replace CheckoutScreen() with your checkout screen widget
+                          Checkoutscreen()), 
                 );
               },
               child: Text(
