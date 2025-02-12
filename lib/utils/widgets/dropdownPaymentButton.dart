@@ -17,7 +17,6 @@ class DropdownPaymentButton extends StatelessWidget {
           : null, // Ensures it does not throw an error if null
       items: const [
         DropdownMenuItem(value: "COD", child: Text("Cash on Delivery (COD)")),
-        DropdownMenuItem(value: "Online", child: Text("Online Payment")),
       ],
       onChanged: (value) {
         if (value != null) {

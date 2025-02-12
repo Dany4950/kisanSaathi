@@ -113,10 +113,10 @@ class _SearchScreenState extends State<SearchScreen> {
           SizedBox(
             height: 40,
           ),
-          Text(
-            "Recent Searches",
-            style: TextStyle(fontWeight: FontWeight.bold),
-          ),
+          // Text(
+          //   "Recent Searches",
+          //   style: TextStyle(fontWeight: FontWeight.bold),
+          // ),
           // Product List
           Expanded(
             child: _filteredProducts.isEmpty

@@ -36,7 +36,7 @@ class ProductDetailScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             const SizedBox(height: 20),
-            Image.asset(product['imageUrl'], width: 350, height: 350),
+            Image.asset(product['imageUrl'], width: 320, height: 320),
             const SizedBox(height: 20),
             Text(
               product['name'],
@@ -105,7 +105,7 @@ class ProductDetailScreen extends StatelessWidget {
               height: 35,
             ),
             SizedBox(
-              width: 400,
+              width: 350,
               height: 80,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(

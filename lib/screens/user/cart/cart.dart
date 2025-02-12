@@ -1,39 +1,3 @@
-// import 'package:flutter/material.dart';
-// import 'package:kisan_saathi/providerModels/cartProvider.dart';
-// import 'package:provider/provider.dart';
-
-// class cartScreen extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     final cartProvider = Provider.of<CartProvider>(context);
-
-//     return Scaffold(
-//         appBar: AppBar(title: Text("Your Cart")),
-//         body: ListView.builder(
-//           itemCount: cartProvider.cartItems.length,
-//           itemBuilder: (context, index) {
-//             final item = cartProvider.cartItems[index];
-//             return ListTile(
-//               title: Text(item['name']),
-//               subtitle: Text("₹${item['price']} x ${item['quantity']}"),
-//               trailing: Text("₹${item['price'] * item['quantity']}"),
-//             );
-//           },
-//         ),
-//         bottomNavigationBar: Container(
-//           padding: EdgeInsets.all(16),
-//           child: Text(
-//             "Total Amount : ₹${cartProvider.totalPrice}",
-//             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-//           ),
-//         ),
-//         floatingActionButton: FloatingActionButton(
-//           onPressed: () {},
-//           child: Container(),
-//         ));
-//   }
-// }
-
 import 'package:flutter/material.dart';
 import 'package:kisan_saathi/providerModels/cartProvider.dart';
 import 'package:kisan_saathi/screens/user/cart/checkoutScree.dart';
@@ -54,8 +18,11 @@ class cartScreen extends StatelessWidget {
                 final item = cartProvider.cartItems[index];
                 return ListTile(
                   title: Text(item['name']),
-                  subtitle: Text("₹${item['price']} x ${item['quantity']}"),
-                  trailing: Text("₹${item['price'] * item['quantity']}"),
+                  subtitle: Text("₹${item['price']} x ${item['quantity']} "),
+                  trailing: Text(
+                    "=  ₹${item['price'] * item['quantity']} ",
+                    style: TextStyle(fontSize: 23),
+                  ),
                 );
               },
             ),
@@ -66,12 +33,12 @@ class cartScreen extends StatelessWidget {
             padding: EdgeInsets.all(16),
             child: Text(
               "Total Amount : ₹${cartProvider.totalPrice}",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
             ),
           ),
           SizedBox(
-            width: 390,
-            height: 80,
+            width: 370,
+            height: 70,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.green,
@@ -83,9 +50,7 @@ class cartScreen extends StatelessWidget {
                 // Add your checkout logic here
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                      builder: (context) =>
-                          Checkoutscreen()), 
+                  MaterialPageRoute(builder: (context) => Checkoutscreen()),
                 );
               },
               child: Text(
