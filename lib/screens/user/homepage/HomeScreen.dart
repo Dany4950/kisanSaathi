@@ -25,11 +25,9 @@ class Homescreen extends StatelessWidget {
             flexibleSpace: FlexibleSpaceBar(
               title: const Text('Kisan Sathi - Nurturing Every Farm'),
               background: Image.asset(
-                
-                'assets/images/HomeScreen_image.png' 
-                ,fit: BoxFit.contain,
-                ),
-              
+                'assets/images/HomeScreen_image.png',
+                fit: BoxFit.contain,
+              ),
             ),
           ),
           SliverPadding(

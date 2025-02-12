@@ -167,7 +167,7 @@ class Finalbilling extends StatelessWidget {
                 onPressed: () async {
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(
-                      content: Text('Order places successfully '),
+                      content: Text('Order placed successfully '),
                       backgroundColor: Colors.blueAccent,
                       duration: Duration(seconds: 3),
                     ),
