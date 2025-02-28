@@ -21,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
       });
     });
 
-    // Navigate to LandingPage after 6 seconds
+
     Future.delayed(const Duration(seconds: 5), () {
       Navigator.pushReplacement(
         context,

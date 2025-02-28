@@ -5,8 +5,8 @@ class ProductProvider extends ChangeNotifier {
     {
       "id": "1",
       "name": "Front Wheel Bearing",
-      "price": 123,
-      "imageUrl": "assets/images/Hydrolic Pipe.png",
+      "price": 884,
+      "imageUrl": "assets/images/front wheel bearing.png",
       "description": "Tractor Hydraulic Male Female Coupling "
           " Size =1/2 ,3/4 Inches"
           " , Material = Mild Steel"
@@ -15,7 +15,7 @@ class ProductProvider extends ChangeNotifier {
     {
       "id": "2",
       "name": "Hydraulic Tractor Trolley Hose",
-      "price": 39999,
+      "price": 120,
       "imageUrl": "assets/images/Hydraulic Tractor Trolley Hose.png",
       "description": "Type : Hydraulic "
           " Model Name/Number : tractor/trolley "
@@ -25,7 +25,7 @@ class ProductProvider extends ChangeNotifier {
     {
       "id": "3",
       "name": "Oil Filter",
-      "price": 2999,
+      "price": 150,
       "imageUrl": "assets/images/Oil Filter.png",
       "description":
           "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
@@ -33,7 +33,7 @@ class ProductProvider extends ChangeNotifier {
     {
       "id": "4",
       "name": "Checknut",
-      "price": 4999,
+      "price": 2,
       "imageUrl": "assets/images/Checknut.png",
       "description": "Material : Mild Steel"
           "Thread Size (inch) : M6"
@@ -42,7 +42,7 @@ class ProductProvider extends ChangeNotifier {
     {
       "id": "5",
       "name": "Center Pin",
-      "price": 4999,
+      "price": 290,
       "imageUrl": "assets/images/Center Pin.png",
       "description": "Material : Mild Steel"
           "Thread Size (inch) : -"
@@ -51,7 +51,7 @@ class ProductProvider extends ChangeNotifier {
     {
       "id": "6",
       "name": "Break Paddle",
-      "price": 4999,
+      "price": 240,
       "imageUrl": "assets/images/Break Paddle.png",
       "description": "Size : 8 inch "
           "Material : Mild Steel"
@@ -61,8 +61,18 @@ class ProductProvider extends ChangeNotifier {
     {
       "id": "7",
       "name": "Engine Oil Filter",
-      "price": 4999,
+      "price": 7500,
       "imageUrl": "assets/images/ Engine Oil Filter.png",
+      "description": "Size : 8 inch "
+          "Material : Mild Steel"
+          "Features  :  Rust Proof "
+          "Usage  : Tractor "
+    },
+    {
+      "id": "8",
+      "name": "Hydraulic Pipe ",
+      "price": 200,
+      "imageUrl": "assets/images/Hydrolic Pipe.png",
       "description": "Size : 8 inch "
           "Material : Mild Steel"
           "Features  :  Rust Proof "
