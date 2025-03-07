@@ -14,7 +14,8 @@ class landingScreen extends StatelessWidget {
   final List<NavigationItem> _navigationItems = [
     NavigationItem(
       label: '',
-      icon: Icons.home,
+      icon: Icons.home  ,
+      
       screen: Homescreen(),
     ),
     NavigationItem(

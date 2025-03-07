@@ -1,6 +1,6 @@
 // widgets/custom_appbar.dart
 import 'package:flutter/material.dart';
-import 'package:kisan_saathi/themes/appTheme.dart';
+
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
@@ -28,6 +28,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor: Colors.grey[200],
       title: Text(
         title,
         style: TextStyle(
@@ -38,7 +39,6 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         ),
       ),
       centerTitle: true,
-      backgroundColor: Apptheme.appBackgroundColor,
       elevation: elevation,
       leading: _buildLeading(context),
       actions: actions,

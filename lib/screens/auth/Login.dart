@@ -1,13 +1,11 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:kisan_saathi/providerModels/login/mobileTextProvider.dart';
+import 'package:kisan_saathi/screens/user/homepage/HomeScreen.dart';
 
 import 'package:kisan_saathi/screens/user/landingScreen.dart';
 import 'package:kisan_saathi/themes/appTheme.dart';
 
 import 'package:provider/provider.dart';
-
 
 class loginScreen extends StatelessWidget {
   const loginScreen({super.key});
@@ -24,24 +22,23 @@ class loginScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             SizedBox(
-            height: screenHeight * 0.1,
-          ),
-
-          //logo container
-
-          Center(
-            child: Container(
-              height: screenHeight * 0.25,
-              child: Image.asset('assets/images/appLogo.png'),
+              height: screenHeight * 0.1,
             ),
-          ),
 
-          // space between app logo and app text
-          SizedBox(
-            height: screenHeight * 0.08,
-          ),
+            //logo container
 
-          
+            Center(
+              child: Container(
+                height: screenHeight * 0.25,
+                child: Image.asset('assets/images/appLogo.png'),
+              ),
+            ),
+
+            // space between app logo and app text
+            SizedBox(
+              height: screenHeight * 0.08,
+            ),
+
             Center(
               child: Text(
                 "KISAN SAATHI",
@@ -75,23 +72,24 @@ class loginScreen extends StatelessWidget {
             ),
 
             // login/register button
-            
-           TextButton(
-      onPressed: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => landingScreen()));
-      },
-      child: Container(
-          decoration: BoxDecoration(
-              color: Colors.grey[600], borderRadius: BorderRadius.circular(9)),
-          height: screenHeight * 0.07,
-          width: screenWidth * 0.7,
-          child: const Center(
-              child: Text(
-            "Login/Register",
-            style: TextStyle(fontSize: 16, color: Colors.white),
-          ))),
-    ),
+
+            TextButton(
+              onPressed: () {
+                Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (context) => landingScreen()));
+              },
+              child: Container(
+                  decoration: BoxDecoration(
+                      color: Colors.grey[600],
+                      borderRadius: BorderRadius.circular(9)),
+                  height: screenHeight * 0.07,
+                  width: screenWidth * 0.7,
+                  child: const Center(
+                      child: Text(
+                    "Login/Register",
+                    style: TextStyle(fontSize: 16, color: Colors.white),
+                  ))),
+            ),
 
             // space between button and Not now link
             SizedBox(
@@ -102,7 +100,8 @@ class loginScreen extends StatelessWidget {
 
             TextButton(
                 onPressed: () {
-                  //logic need to be written from provider
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => Homescreen()));
                 },
                 child: const Text(
                   "Not now ",

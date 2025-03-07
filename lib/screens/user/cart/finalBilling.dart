@@ -94,35 +94,7 @@ class Finalbilling extends StatelessWidget {
             const SizedBox(
               height: 23,
             ),
-            // Container(
-            //   margin: const EdgeInsets.only(left: 20),
-            //   width: screenWidth * 0.9,
-            //   decoration: BoxDecoration(
-            //     border: Border.all(color: Colors.black),
-            //     borderRadius: BorderRadius.circular(30),
-            //     color: Colors.grey[300],
-            //   ),
-            //   child: Column(
-            //     children: [
-            //       const Text(
-            //         " Total Bill ",
-            //         style: TextStyle(fontWeight: FontWeight.w600),
-            //       ),
-            //       const SizedBox(
-            //         height: 17,
-            //       ),
-            //       Padding(
-            //         padding: const EdgeInsets.all(8.0),
-            //         child: Column(
-            //           children: [
-            //             Text("₹${totalPrice.toStringAsFixed(2)} "),
-            //             Text("")
-            //           ],
-            //         ),
-            //       ),
-            //     ],
-            //   ),
-            // ),
+          
             Container(
               margin: const EdgeInsets.only(left: 20, right: 20),
               width: screenWidth * 0.9,
@@ -176,7 +148,9 @@ class Finalbilling extends StatelessWidget {
                   Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => Notificationscreen()));
+                          builder: (context) => Notificationscreen(
+                            
+                          )));
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.green,

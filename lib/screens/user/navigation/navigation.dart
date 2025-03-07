@@ -17,6 +17,7 @@ class AppNavigator extends StatelessWidget {
       builder: (context, navigationProvider, _) {
         return Scaffold(
           body: IndexedStack(
+
             index: navigationProvider.currentIndex,
             children: items.map((item) => item.screen).toList(),
           ),
@@ -27,7 +28,10 @@ class AppNavigator extends StatelessWidget {
             items: items
                 .map(
                   (item) => BottomNavigationBarItem(
-                    icon: Icon(item.icon),
+                    icon: Icon(
+                      item.icon,
+                      size: 30,
+                    ),
                     label: item.label,
                   ),
                 )

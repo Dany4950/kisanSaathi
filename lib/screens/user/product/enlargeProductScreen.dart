@@ -30,7 +30,8 @@ class ProductDetailScreen extends StatelessWidget {
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text(product['name'])),
+      appBar: AppBar(
+          backgroundColor: Colors.grey[200], title: Text(product['name'])),
       body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -88,9 +89,19 @@ class ProductDetailScreen extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 20.0),
-                  child: Text("You picked $itemsCountInCart items"),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 20.0),
+                      child: Text("You picked $itemsCountInCart items"),
+                    ),
+                    SizedBox(
+                      width: 100,
+                    ),
+                    const Text(
+                      "SubTotal",
+                    ),
+                  ],
                 ),
                 Row(
                   children: [
@@ -126,22 +137,22 @@ class ProductDetailScreen extends StatelessWidget {
                         child: const Icon(Icons.plus_one),
                       ),
                     ),
-                    SizedBox(
-                      width: 60,
+                    const SizedBox(
+                      width: 80,
                     ),
                     Column(
                       children: [
-                        const Text(
-                          "SubTotal",
-                        ),
                         Text(
                           " ₹${product['price'] * itemsCountInCart}",
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontSize: 30, fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),
                   ],
+                ),
+                const SizedBox(
+                  height: 15,
                 ),
               ],
             ),
