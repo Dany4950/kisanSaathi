@@ -8,9 +8,10 @@ class ProductProvider extends ChangeNotifier {
       "price": 884,
       "imageUrl": "assets/images/front wheel bearing.png",
       "description": "Tractor Hydraulic Male Female Coupling "
-          " Size =1/2 ,3/4 Inches"
-          " , Material = Mild Steel"
-          "Thread Size = 1/2,3/4"
+          " Size =1/2 ,3/4 Inches",
+      "Material":"Mild Steel",
+      "Pieces":"3",
+      "Status" : "156 items left"
     },
     {
       "id": "2",
@@ -20,7 +21,11 @@ class ProductProvider extends ChangeNotifier {
       "description": "Type : Hydraulic "
           " Model Name/Number : tractor/trolley "
           "Working Pressure : 2610"
-          "Diameter : 1 to 3 inch, 3/8"
+          "Diameter : 1 to 3 inch, 3/8",
+            "Pieces":"3",
+      "Status" : "156 items left"
+            ,"Material":"Mild Steel",
+
     },
     {
       "id": "3",
@@ -28,7 +33,10 @@ class ProductProvider extends ChangeNotifier {
       "price": 150,
       "imageUrl": "assets/images/Oil Filter.png",
       "description":
-          "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
+          "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+            "Pieces":"3",
+      "Status" : "156 items left"
+      ,      "Material":"Mild Steel",
     },
     {
       "id": "4",
@@ -38,15 +46,21 @@ class ProductProvider extends ChangeNotifier {
       "description": "Material : Mild Steel"
           "Thread Size (inch) : M6"
           "Product Shape :Round"
+,
+      "Pieces":"3",
+      "Status" : "156 items left"
     },
     {
       "id": "5",
+      "Material":"Mild Steel",
       "name": "Center Pin",
       "price": 290,
       "imageUrl": "assets/images/Center Pin.png",
-      "description": "Material : Mild Steel"
-          "Thread Size (inch) : -"
-          "Product Shape : pin "
+      "description":  "Thread Size (inch) : -"
+          "Product Shape : pin ",
+
+      "Pieces":"3",
+      "Status" : "156 items left"
     },
     {
       "id": "6",
@@ -57,6 +71,9 @@ class ProductProvider extends ChangeNotifier {
           "Material : Mild Steel"
           "Features  :  Rust Proof "
           "Usage  : Tractor "
+,
+      "Pieces":"3",
+      "Status" : "156 items left"
     },
     {
       "id": "7",
@@ -66,7 +83,10 @@ class ProductProvider extends ChangeNotifier {
       "description": "Size : 8 inch "
           "Material : Mild Steel"
           "Features  :  Rust Proof "
-          "Usage  : Tractor "
+          "Usage  : Tractor ",
+
+      "Pieces":"3",
+      "Status" : "156 items left"
     },
     {
       "id": "8",
@@ -76,7 +96,10 @@ class ProductProvider extends ChangeNotifier {
       "description": "Size : 8 inch "
           "Material : Mild Steel"
           "Features  :  Rust Proof "
-          "Usage  : Tractor "
+          "Usage  : Tractor ",
+            "Material":"Mild Steel",
+      "Pieces":"3",
+      "Status" : "156 items left"
     },
   ];
 
