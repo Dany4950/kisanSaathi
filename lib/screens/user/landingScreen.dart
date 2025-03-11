@@ -14,8 +14,7 @@ class landingScreen extends StatelessWidget {
   final List<NavigationItem> _navigationItems = [
     NavigationItem(
       label: '',
-      icon: Icons.home  ,
-      
+      icon: Icons.home,
       screen: Homescreen(),
     ),
     NavigationItem(
@@ -24,9 +23,7 @@ class landingScreen extends StatelessWidget {
       screen: SearchScreen(),
     ),
     NavigationItem(
-        label: '',
-        icon: Icons.notifications,
-        screen: const Notificationscreen()),
+        label: '', icon: Icons.notifications, screen: Notificationscreen()),
     NavigationItem(
       label: '',
       icon: Icons.person,
@@ -39,4 +36,3 @@ class landingScreen extends StatelessWidget {
     return AppNavigator(items: _navigationItems);
   }
 }
-

@@ -47,7 +47,7 @@ class CartProvider extends ChangeNotifier{
     return _cartItems.fold(0, (sum, item) => sum + (item['price'] * item['quantity']));
   }
   
-  // You already have this, but renamed to match the calls in the updated cart screen
+
   double get totalPrice {
     return _cartItems.fold(0, (sum, item) => sum + (item['price'] * item['quantity']));
   }

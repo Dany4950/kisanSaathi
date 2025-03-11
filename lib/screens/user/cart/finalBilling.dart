@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:kisan_saathi/providerModels/cartProvider.dart';
 import 'package:kisan_saathi/providerModels/checkout/checkoutProvider.dart';
+import 'package:kisan_saathi/screens/user/landingScreen.dart';
 import 'package:kisan_saathi/screens/user/notification/notificationScreen.dart';
 import 'package:kisan_saathi/utils/appbar.dart';
 import 'package:provider/provider.dart';
@@ -94,7 +95,7 @@ class Finalbilling extends StatelessWidget {
             const SizedBox(
               height: 23,
             ),
-          
+
             Container(
               margin: const EdgeInsets.only(left: 20, right: 20),
               width: screenWidth * 0.9,
@@ -140,17 +141,13 @@ class Finalbilling extends StatelessWidget {
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(
                       content: Text('Order placed successfully '),
-                      backgroundColor: Colors.blueAccent,
+                      backgroundColor: Colors.green,
                       duration: Duration(seconds: 3),
                     ),
                   );
-                  await Future.delayed(Duration(seconds: 4));
-                  Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => Notificationscreen(
-                            
-                          )));
+                  await Future.delayed(Duration(seconds: 2));
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => landingScreen()));
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.green,
