@@ -101,7 +101,7 @@ class loginScreen extends StatelessWidget {
             TextButton(
                 onPressed: () {
                   Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) => Homescreen()));
+                      MaterialPageRoute(builder: (context) => landingScreen()));
                 },
                 child: const Text(
                   "Not now ",

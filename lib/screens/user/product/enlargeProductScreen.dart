@@ -186,7 +186,9 @@ class ProductDetailScreen extends StatelessWidget {
 
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => cartScreen()),
+                      MaterialPageRoute(builder: (context) => cartScreen(
+                        productId: product['id']
+                      )),
                     );
                   },
                   child: const Text(
